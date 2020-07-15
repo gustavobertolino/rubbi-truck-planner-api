@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  social_number_id: MyString
+  driving_license: MyString
+  truck_license: MyString
+  truck: 
+
+two:
+  name: MyString
+  social_number_id: MyString
+  driving_license: MyString
+  truck_license: MyString
+  truck: 

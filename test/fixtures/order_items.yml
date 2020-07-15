@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: MyString
+  3d_dimension_in_cubic_meters: 
+  order: one
+
+two:
+  price: MyString
+  3d_dimension_in_cubic_meters: 
+  order: two

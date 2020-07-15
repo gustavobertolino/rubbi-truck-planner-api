@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin: MyString
+  destination: MyString
+  orders: one
+  driver_id: 1
+
+two:
+  origin: MyString
+  destination: MyString
+  orders: two
+  driver_id: 1
