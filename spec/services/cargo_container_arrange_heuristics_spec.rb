@@ -15,8 +15,8 @@ RSpec.describe "test_heuristics" do
                                   :tree_dimension_in_cubic_meters => 20,
                                   :largest_dimension_in_meters => 2)
 
-    @order1 = Order.new(:id => 01, :order_items => [@order_item1])
-    @order2 = Order.new(:id => 02, :order_items => [@order_item2])
+    @order1 = Order.new(:id => 01, :order_item => [@order_item1])
+    @order2 = Order.new(:id => 02, :order_item => [@order_item2])
     @orders = [@order1, @order2]
 
     @container = Container.new(:id => 01, :tree_dimension_in_cubic_meters => 200,
