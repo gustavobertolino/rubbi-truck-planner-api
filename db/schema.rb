@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_18_215538) do
+ActiveRecord::Schema.define(version: 2020_07_26_012701) do
 
   create_table "containers", force: :cascade do |t|
     t.decimal "tree_dimension_in_cubic_meters"
     t.integer "truck_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.decimal "largest_dimension_in_meters"
+    t.boolean "is_container_loaded"
     t.index ["truck_id"], name: "index_containers_on_truck_id"
   end
 
@@ -45,6 +47,7 @@ ActiveRecord::Schema.define(version: 2020_07_18_215538) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.decimal "largest_dimension_in_meters"
+    t.boolean "is_order_item_arranged"
     t.index ["order_id"], name: "index_order_items_on_order_id"
   end
 

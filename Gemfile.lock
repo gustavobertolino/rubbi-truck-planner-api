@@ -63,6 +63,7 @@ GEM
     choice (0.2.0)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
+    deep_dup (0.0.3)
     diff-lcs (1.4.4)
     erubi (1.9.0)
     ffi (1.13.1)
@@ -176,6 +177,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  deep_dup
   listen (~> 3.2)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
