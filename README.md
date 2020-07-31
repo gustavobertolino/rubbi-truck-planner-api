@@ -6,7 +6,7 @@ The idea is to implement the following system design flow
 
 ![alt text](./rubbi-truck-planner.png)
 
-#How to run
+# How to run 
 This README documents whatever steps are necessary to get the
 application up and running.
 
