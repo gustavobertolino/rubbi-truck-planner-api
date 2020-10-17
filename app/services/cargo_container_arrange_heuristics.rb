@@ -1,4 +1,4 @@
-require 'deep_dup/core_ext/object'
+require "deep_dup/core_ext/object"
 
 # heuristics for arranging items in container
 module CargoContainerArrangeHeuristics
@@ -9,8 +9,7 @@ module CargoContainerArrangeHeuristics
     remaining_container_volume = truck_container_volume
     cloned_orders = orders
 
-    cloned_order_items = cloned_orders.flat_map { |item| item.order_item }
-    byebug
+    cloned_order_items = cloned_orders.flat_map(&:order_item)
     cloned_order_items.sort_by(&:tree_dimension_in_cubic_meters).reverse
 
     cloned_order_items.each do |item|
